@@ -81,7 +81,7 @@ sudo mount /dev/sdb /data
 
 `/data`'ya mount edilen disk `lsblk` ile kontrol edildi.
 
-![Persistent Disk kontrolü](disk.png)
+![Persistent Disk kontrolü](images/disk.png)
 
 
 ### Persistent Mount
@@ -143,7 +143,7 @@ Kurulum sonrasında Nginx service aktif edildi ve boot sırasında otomatik baş
 sudo systemctl enable --now nginx
 ```
 
-![Nginx service durumu](nginx.png)
+![Nginx service durumu](images/nginx.png)
 
 `curl http://localhost` ile erişim test edildi. Ardından http://104.155.183.140 ile External IP ile erişim test edildi.
 
@@ -178,7 +178,7 @@ cemrehasirci.tr → 104.155.183.140 → Google Cloud VM
 
 `nslookup` ile kontrol edildi.
 
-![DNS çözümleme kontrolü](nslookup.png)
+![DNS çözümleme kontrolü](images/nslookup.png)
 
 
 ---
@@ -240,7 +240,7 @@ curl -I https://cemrehasirci.tr
 sudo certbot renew --dry-run
 ```
 
-![HTTPS erişim testi](curl.png)
+![HTTPS erişim testi](images/curl.png)
 
 
 ---
